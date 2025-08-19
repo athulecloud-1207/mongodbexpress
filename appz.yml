@@ -1,24 +1,24 @@
 app:
     name: Mongodb Express
     code: mongodbexpress
-    notify: appzdev@cloudbourne.co
+    notify: asunil@ecloudcontrol.com
 
 build:
-    version: 0.1
+    version: 1.0
     env: DEV
     build_file: none
     output_files: output/*.zip
-    image_template: mongodbexpress-0.54
+    image_template: mongodbexpress-1.0
 
 deploy:
-    context: alpha/DEV
+    context: athulecloud-1207/DEV
     replicas: 1
     port:
     - 8081
 
 properties:
     ME_CONFIG_MONGODB_ENABLE_ADMIN: true
-    ME_CONFIG_MONGODB_SERVER: mongodb-4-4
+    ME_CONFIG_MONGODB_SERVER: mongodb-8-0
     ME_CONFIG_MONGODB_PORT: 27017
     ME_CONFIG_MONGODB_AUTH_DATABASE: admin
     ME_CONFIG_MONGODB_AUTH_USERNAME: admin
@@ -27,4 +27,4 @@ properties:
     ME_CONFIG_BASICAUTH_USERNAME: appz
     ME_CONFIG_BASICAUTH_PASSWORD:
          vault: MONGODB_BASIC_AUTH_PASSWORD
-    revision: 11
+    revision: 00
