@@ -20,4 +20,4 @@ properties:
     ME_CONFIG_MONGODB_ENABLE_ADMIN: true
     ME_CONFIG_MONGODB_SERVER: 10.0.1.180
     ME_CONFIG_MONGODB_PORT: 30113
-    revision: 03
+    revision: 04
